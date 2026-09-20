@@ -96,6 +96,6 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
 ---
 
 <div align="center">
-  <img height="140" src="https://github-readme-stats.vercel.app/api?username=madhavkrishnamangalams&show_icons=true&hide_border=true&hide=issues&theme=graywhite" alt="GitHub stats">
-  <img height="140" src="https://github-readme-stats.vercel.app/api/top-langs/?username=madhavkrishnamangalams&layout=compact&hide_border=true&langs_count=6&theme=graywhite" alt="Top languages">
+  <img height="140" src="https://github-stats-extended.vercel.app/api?username=madhavkrishnamangalams&show_icons=true&hide_border=true&hide=issues&theme=graywhite" alt="GitHub stats">
+  <img height="140" src="https://github-stats-extended.vercel.app/api/top-langs/?username=madhavkrishnamangalams&layout=compact&hide_border=true&langs_count=6&theme=graywhite" alt="Top languages">
 </div>
