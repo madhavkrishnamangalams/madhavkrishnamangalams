@@ -9,7 +9,6 @@
   <a href="https://madhavkrishnamangalams.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0B0B0B?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/madhavkrishnamangalams/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:madhav18oct@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://scholar.google.com/"><img src="https://img.shields.io/badge/Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
 </p>
 
 ---
@@ -95,7 +94,10 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
 
 ---
 
-<div align="center">
-  <img height="140" src="https://github-stats-extended.vercel.app/api?username=madhavkrishnamangalams&show_icons=true&hide_border=true&hide=issues&theme=graywhite" alt="GitHub stats">
-  <img height="140" src="https://github-stats-extended.vercel.app/api/top-langs/?username=madhavkrishnamangalams&layout=compact&hide_border=true&langs_count=6&theme=graywhite" alt="Top languages">
-</div>
+### Currently
+
+- Extending the offline RL pipeline toward multi-building generalization — DOE reference archetypes, physical-parameter conditioning, zero-shot transfer
+- Reading into structured world models and model-based RL for control under partial observability
+- Preparing **PhD applications for Fall 2027** in RL / learned dynamics for physical systems
+
+**Open to:** PhD positions starting Fall 2027, and ML / robotics / thermal-systems engineering roles where physical modeling and learning meet. Reach me at [madhav18oct@gmail.com](mailto:madhav18oct@gmail.com).
