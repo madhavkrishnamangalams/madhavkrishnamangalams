@@ -15,10 +15,9 @@
 
 ### About
 
-Mechanical/systems engineer moving into machine learning. Day job is diagnosing and validating thermal and energy performance across a portfolio of large buildings — field data, physics-based models, Python. Off-hours I work on offline RL and learned dynamics for control of those same systems, under the name **Enthalpy AI**.
+I work on offline RL and learned dynamics for physical systems that are expensive or unsafe to experiment on directly, with a focus on evaluation that holds up once the control loop is closed. By day I'm a senior energy engineer diagnosing thermal and energy performance across a portfolio of large buildings: field data, physics-based models, Python. My independent research on the same systems runs under the name **Enthalpy AI**.
 
-- 🔭 Extending an offline RL + EnergyPlus pipeline from one building to **multi-building generalization** — DOE reference archetypes, physical-parameter conditioning, zero-shot transfer to held-out building types
-- 📄 Workshop paper under double-blind review — *Tackling Climate Change with ML*, NeurIPS 2026
+- 🔭 Extending a physics-informed thermal dynamics model from one building to **multi-building generalization**: DOE reference archetypes, physical-parameter conditioning, zero-shot transfer to held-out buildings
 - 🎓 MS Mechanical Engineering, Columbia · B.Tech Mechanical Engineering, NIT Tiruchirappalli
 - 🧰 Comfortable at both ends of the stack: SolidWorks and a CNC mill on one, PyTorch and FastAPI on the other
 - 💬 Ask me about offline RL evaluation pitfalls, building thermal dynamics, or why closed-loop rollouts humble open-loop metrics
@@ -29,11 +28,11 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Offline RL for price-responsive HVAC** | Behavior cloning, FQI, discrete CQL, and a learned one-step dynamics model, benchmarked in closed-loop EnergyPlus rollouts against real NYISO prices. Honest headline: a fixed 24 °C setpoint beats the learned policies once the loop is closed. | PyTorch · EnergyPlus · NumPy |
-| **Physics-informed hybrid surrogate** | Gray-box thermal surrogate pairing a physical model with a learned residual. ~55% MAE reduction on a single-building case study; multi-building validation in progress. | PyTorch · EnergyPlus |
-| **MetaRouter** | CLI router for coding agents — git-state snapshotting, SQLite logging, keyword-based routing between models. | Python · SQLite |
-| **Incentive RAG platform** | Internal chat tool answering utility and state incentive program questions with citation-backed, deterministic savings calculations. | FastAPI · React · LangChain · ChromaDB |
-| **Jet-quenching test rig** | Quenching failure-analysis rig designed and built from scratch: plate-transport rail, CNC-milled nozzle, actuator control, IR camera calibration. | SolidWorks · CNC · Arduino · MATLAB |
+| **[Offline RL for price-responsive HVAC](https://madhavkrishnamangalams.github.io/projects/offline-rl-hvac/)** | Discrete CQL, behavior cloning, FQI, and a learned one-step dynamics model, audited through model rollout, open-loop, and closed-loop EnergyPlus replay with NYISO prices. Honest headline: a fixed 24 °C setpoint beats every learned policy once the loop is closed. [Preprint (PDF)](https://madhavkrishnamangalams.github.io/papers/fixed-setpoint-offline-rl.pdf) | PyTorch · EnergyPlus · NumPy |
+| **Physics-informed grey-box surrogate** | Thermal dynamics model pairing a 2R2C RC-network physics core with a learned residual. ~55% rollout MAE reduction on a single-building case study; multi-building validation in progress. | PyTorch · EnergyPlus |
+| **[Battery fleet degradation](https://madhavkrishnamangalams.github.io/projects/battery-fleet/)** | Time-to-failure and anomaly detection on the Severson dataset, where ~70% of cells are right-censored. Data foundation done; hazard model and conformal prediction in progress. | Python · DuckDB · Parquet |
+| **[Jet-quenching test rig](https://madhavkrishnamangalams.github.io/media/quench-footage.mp4)** | Three-person capstone team: designed and fabricated a rig to study quench failure in Al 7075, built around the lab's existing furnace and IR camera. Plate-transport rail, CNC-milled nozzle, Arduino motion control, MATLAB IR calibration. | SolidWorks · CNC · Arduino · MATLAB |
+| **MetaRouter** | CLI router for coding agents: git-state snapshotting, SQLite logging, keyword-based routing between models. | Python · SQLite |
 
 ---
 
@@ -46,8 +45,6 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
       <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
       <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
       <img src="https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black">
-      <img src="https://img.shields.io/badge/Offline_RL-5B5B5B?style=flat-square">
-      <img src="https://img.shields.io/badge/World_Models-5B5B5B?style=flat-square">
     </td>
   </tr>
   <tr>
@@ -58,6 +55,7 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
       <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white">
       <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white">
       <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square">
+      <img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black">
     </td>
   </tr>
   <tr>
@@ -96,8 +94,9 @@ Mechanical/systems engineer moving into machine learning. Day job is diagnosing 
 
 ### Currently
 
-- Extending the offline RL pipeline toward multi-building generalization — DOE reference archetypes, physical-parameter conditioning, zero-shot transfer
+- Extending the grey-box dynamics model toward multi-building generalization: DOE reference archetypes, physical-parameter conditioning, zero-shot transfer
+- Revising the offline RL paper; continuous-action offline RL (TD3+BC, IQL) through the same closed-loop audit is next
 - Reading into structured world models and model-based RL for control under partial observability
-- Preparing **PhD applications for Fall 2027** in RL / learned dynamics for physical systems
+- Preparing **PhD applications for Fall 2027** in RL and learned dynamics for physical systems
 
-**Open to:** PhD positions starting Fall 2027, and ML / robotics / thermal-systems engineering roles where physical modeling and learning meet. Reach me at [madhav18oct@gmail.com](mailto:madhav18oct@gmail.com).
+**Open to:** PhD positions starting Fall 2027, and ML, robotics, or thermal-systems roles where physical modeling and learning meet. Reach me at [madhav18oct@gmail.com](mailto:madhav18oct@gmail.com).
